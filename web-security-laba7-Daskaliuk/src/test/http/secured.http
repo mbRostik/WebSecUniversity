@@ -1,0 +1,45 @@
+### GET ALL ITEMS
+GET http://localhost:8080/api/v1/items
+Authorization: Basic admin admin
+Accept: application/json
+###
+
+
+### GET request to get one items by id
+GET http://localhost:8080/api/v1/items/4
+Authorization: Basic admin admin
+Accept: application/json
+###
+
+
+### CREATE ONE ITEM
+POST http://localhost:8080/api/v1/items
+Authorization: Basic admin admin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": "44",
+  "name": "Title_44",
+  "description": "Description_44"
+}
+
+###
+
+##
+GET http://localhost:8080/api/v1/items/hello/user
+Authorization: Basic admin admin
+Accept: application/json
+###
+
+###
+GET http://localhost:8080/api/v1/items/hello/admin
+Authorization: Basic admin admin
+Accept: application/json
+###
+
+###
+GET http://localhost:8080/api/v1/items/hello/unknown
+Authorization: Basic admin admin
+Accept: application/json
+###
