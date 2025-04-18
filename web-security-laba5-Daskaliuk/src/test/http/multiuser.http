@@ -1,0 +1,72 @@
+### GET Hello Admin
+GET http://localhost:8080/api/v1/persons/admin
+Authorization: Basic admin admin
+Accept: application/json
+###
+
+### DELETE for admin
+DELETE http://localhost:8080/api/v1/persons/delete/67d2abcfdd85026b0164b4a3
+Authorization: Basic admin admin
+Accept: application/json
+###
+
+### UPDATE for admin
+PUT http://localhost:8080/api/v1/persons/update
+Authorization: Basic admin admin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Bobbbbbbbb",
+  "age": "24"
+}
+###
+
+### GETBYID for admin
+GET http://localhost:8080/api/v1/persons/getById/67bc8a6bcea87d78f44f2aab
+Authorization: Basic admin admin
+Accept: application/json
+###
+
+### GET for admin
+GET http://localhost:8080/api/v1/persons
+Authorization: Basic admin admin
+Accept: application/json
+###
+
+### POST for admin
+POST http://localhost:8080/api/v1/persons/post
+Authorization: Basic admin admin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "age": "20"
+}
+###
+
+### GET Hello User
+GET http://localhost:8080/api/v1/persons/user
+Authorization: Basic user user
+Accept: application/json
+###
+
+### GETBYID for user
+GET http://localhost:8080/api/v1/persons/getById/67bc8a6bcea87d78f44f2aab
+Authorization: Basic user user
+Accept: application/json
+###
+
+### GET for user
+GET http://localhost:8080/api/v1/persons
+Authorization: Basic user user
+Accept: application/json
+###
+
+### GET Hello Unknown
+GET http://localhost:8080/api/v1/persons/unknown
+Authorization: Basic unknown unknown
+Accept: application/json
+###
