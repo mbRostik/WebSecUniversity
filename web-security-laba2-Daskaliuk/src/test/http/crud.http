@@ -1,0 +1,44 @@
+### GET all persons
+GET http://localhost:8080/api/v1/persons
+###
+
+### GET one person by id
+GET http://localhost:8080/api/v1/persons/1
+###
+
+### DELETE person
+DELETE http://localhost:8080/api/v1/persons/2
+###
+
+### POST person
+POST http://localhost:8080/api/v1/persons
+Content-Type: application/json
+
+{
+  "name": "Kyle",
+  "age": "20"
+}
+###
+
+### PUT person
+PUT http://localhost:8080/api/v1/persons
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Bobb",
+  "age": "24"
+}
+###
+
+### GET Hello User
+GET http://localhost:8080/api/v1/persons/user
+###
+
+### GET Hello Admin
+GET http://localhost:8080/api/v1/persons/admin
+###
+
+### GET Hello Unknown
+GET http://localhost:8080/api/v1/persons/unknown
+###
