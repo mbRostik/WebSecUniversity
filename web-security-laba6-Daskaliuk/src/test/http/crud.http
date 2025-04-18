@@ -1,0 +1,58 @@
+### GET ALL ITEMS
+GET http://localhost:8080/api/v1/items
+
+###
+
+### GET ONE ITEM
+GET http://localhost:8080/api/v1/items/2
+
+###
+
+### DELETE ONE ITEM
+DELETE http://localhost:8080/api/v1/items/1
+
+###
+
+### CREATE ONE ITEM
+POST http://localhost:8080/api/v1/items
+Content-Type: application/json
+
+{
+  "name": "444",
+  "description": "d4"
+}
+
+
+
+
+### CREATE ONE ITEM
+POST http://localhost:8080/api/v1/items
+Content-Type: application/json
+
+{
+  "name": "555",
+  "description": "d5"
+}
+
+### UPDATE ONE ITEM
+PUT http://localhost:8080/api/v1/items
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "security_2",
+  "description": "description_22"
+}
+
+
+###
+GET http://localhost:8080/api/v1/items/hello/user
+###
+
+###
+GET http://localhost:8080/api/v1/items/hello/admin
+###
+
+###
+GET http://localhost:8080/api/v1/items/hello/unknown
+###
